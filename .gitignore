@@ -1,0 +1,77 @@
+# Xcode
+#
+# Ignore build products and intermediate files
+build/
+DerivedData/
+
+# User-specific settings
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Workspace settings
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+#
+# Packages directory can be regenerated from Package.resolved
+# Package.resolved is useful to commit for exact dependency versions
+Packages/
+.build/
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# CocoaPods
+#
+# You should commit your Podfile and Podfile.lock
+# but ignore the Pods directory
+Pods/
+Podfile.lock
+!Podfile
+!Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency manager
+Dependencies/
+.accio/
+
+# Fastlane
+#
+# It’s recommended to store Fastfile & Appfile in repo
+# but ignore generated reports and temporary files
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Code coverage
+*.xccovreport
+*.xccovarchive
+
+# Device-specific files
+.DS_Store
+*.swp
+*.lock
+*.tmp
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+
+# Archives
+*.xcarchive
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# SwiftLint & other tools
+.swiftlint.yml
+.swiftformat
+.swift-version
+
+# Firebase
+GoogleService-Info.plist
