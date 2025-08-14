@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AuthView: View {
+    @EnvironmentObject var session: SessionStore
     @State var email: String = ""
     @State var password: String = ""
     
@@ -19,7 +20,7 @@ struct AuthView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button {
-                
+                session.signIn(email: email, password: password)
             }label: {
                  Text("Login")
             }
