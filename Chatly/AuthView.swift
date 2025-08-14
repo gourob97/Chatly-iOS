@@ -21,7 +21,7 @@ struct AuthView: View {
             Button {
                 
             }label: {
-                 Text("Sign In")
+                 Text("Login")
             }
             .buttonStyle(.borderedProminent)
         }
