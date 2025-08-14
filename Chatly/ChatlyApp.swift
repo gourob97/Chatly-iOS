@@ -11,7 +11,7 @@ import SwiftUI
 struct ChatlyApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthView()
+            SignUpView()
         }
     }
 }

@@ -13,6 +13,7 @@ struct AuthView: View {
     
     var body: some View {
         VStack {
+            
             TextField("Email", text: $email)
                 .textFieldStyle(.roundedBorder)
             SecureField("Password", text: $password)
