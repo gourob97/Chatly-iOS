@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct ChatlyApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+    @StateObject private var session = SessionStore(repo: FirebaseAuthRepository())
     var body: some Scene {
         WindowGroup {
-            AuthView()
+            RootView()
+                .environmentObject(session)
         }
     }
 }
